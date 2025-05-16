@@ -19,7 +19,6 @@ jobs:
         continue-on-error: true
       - name: Integration tests
         run: yarn test:e2e
-        continue-on-error: true
       - name: JUnit Report Action
         uses: mikepenz/action-junit-report@v5.2.0
         if: always()
