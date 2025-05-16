@@ -50,6 +50,7 @@ jobs:
     needs: [integration-tests]
     steps:
       - name: JUnit Report Action
+        uses: mikepenz/action-junit-report@v5.2.0
         with:
           report_paths: reports/*.xml
   
